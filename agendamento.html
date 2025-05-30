@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva - Estética Automotiva Premium</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <img src="https://img.nsctotal.com.br/wp-content/uploads/2022/10/polimento-de-carro-produtos-joinville-geral-ferramentas_0-1.jpg" alt="Logo Estética Automotiva" class="logo" />
+
+    <h1 style="color: white;">Novo Agendamento</h1>
+
+    <div class="card" style="max-width: 600px; margin: 0 auto; text-align: left;">
+      <form id="reservaForm">
+        <div style="margin-bottom: 1rem;">
+          <label for="nome" style="display: block; margin-bottom: 0.5rem;">Nome completo:</label>
+          <input type="text" id="nome" name="nome" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;" required>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+          <label for="telefone" style="display: block; margin-bottom: 0.5rem;">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;" required>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+          <label for="servico" style="display: block; margin-bottom: 0.5rem;">Serviço:</label>
+          <select id="servico" name="servico" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;" required>
+            <option value="">Selecione um serviço</option>
+            <option value="LC">Lavagem Completa Premium</option>
+            <option value="EN">Enceramento Profundo com Cera de Carnaúba</option>
+            <option value="PC">Polimento Técnico de Carroceria</option>
+            <option value="HI">Higienização Interna com Ozônio</option>
+            <option value="LE">Lavagem + Enceramento Premium</option>
+            <option value="VC">Vitrificação de Pintura com Tecnologia Nanocerâmica</option>
+            <option value="CR">Cristalização Hidrofóbica de Vidros</option>
+            <option value="RH">Revitalização e Hidratação de Couro Premium</option>
+            <option value="DT">Detalhamento Técnico Externo e Interno</option>
+            <option value="FP">Fluorinação de Pintura - Ultra Brilho e Proteção UV</option>
+            <option value="AE">Aplicação de Película de Controle Solar</option>
+          </select>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+          <label for="data" style="display: block; margin-bottom: 0.5rem;">Data:</label>
+          <input type="date" id="data" name="data" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;" required>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+          <label for="horario" style="display: block; margin-bottom: 0.5rem;">Horário:</label>
+          <select id="horario" name="horario" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;" required>
+            <option value="">Selecione um horário</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+          </select>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+          <label for="veiculo" style="display: block; margin-bottom: 0.5rem;">Veículo (marca/modelo):</label>
+          <input type="text" id="veiculo" name="veiculo" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;" required>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+          <label for="observacoes" style="display: block; margin-bottom: 0.5rem;">Observações:</label>
+          <textarea id="observacoes" name="observacoes" rows="3" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+        </div>
+        
+        <div class="button-group" style="margin-top: 1.5rem;">
+          <button type="button" id="voltarBtn" class="btn dark">Voltar</button>
+          <button type="submit" class="btn amber">Confirmar Reserva</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
